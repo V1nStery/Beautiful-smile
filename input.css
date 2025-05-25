@@ -1,0 +1,381 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Involve-Bold';
+    src: local('Involve-Bold'), local('Involve-Bold'),
+        url('./../fonts/Involve/Involve-Bold.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-Bold.otf') format('otf'),
+        url('./../fonts/Involve/Involve-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Involve-BoldOblique';
+    src: local('Involve-BoldOblique'), local('Involve-BoldOblique'),
+        url('./../fonts/Involve/Involve-BoldOblique.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-BoldOblique.otf') format('otf'),
+        url('./../fonts/Involve/Involve-BoldOblique.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Involve-SemiBold';
+    src: local('Involve-SemiBold'), local('Involve-SemiBold'),
+        url('./../fonts/Involve/Involve-SemiBold.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-SemiBold.otf') format('otf'),
+        url('./../fonts/Involve/Involve-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Involve-SemiBoldOblique';
+    src: local('Involve-SemiBoldOblique'), local('Involve-SemiBoldOblique'),
+        url('./../fonts/Involve/Involve-SemiBoldOblique.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-SemiBoldOblique.otf') format('otf'),
+        url('./../fonts/Involve/Involve-SemiBoldOblique.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Involve-Medium';
+    src: local('Involve-Medium'), local('Involve-Medium'),
+        url('./../fonts/Involve/Involve-Medium.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-Medium.otf') format('otf'),
+        url('./../fonts/Involve/Involve-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Involve-MediumOblique';
+    src: local('Involve-MediumOblique'), local('Involve-MediumOblique'),
+        url('./../fonts/Involve/Involve-MediumOblique.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-MediumOblique.otf') format('otf'),
+        url('./../fonts/Involve/Involve-MediumOblique.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Involve-Oblique';
+    src: local('Involve-Oblique'), local('Involve-Oblique'),
+        url('./../fonts/Involve/Involve-Oblique.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-Oblique.otf') format('otf'),
+        url('./../fonts/Involve/Involve-Oblique.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Involve-Regular';
+    src: local('Involve-Regular'), local('Involve-Regular'),
+        url('./../fonts/Involve/Involve-Regular.woff2') format('woff2'),
+        url('./../fonts/Involve/Involve-Regular.otf') format('otf'),
+        url('./../fonts/Involve/Involve-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+:root {
+    --accent: #CC090A;
+    --primary: #222222;
+    --white: #FFFFFF;
+    --tertiary: rgba(34, 34, 34, 0.7);
+
+    --border-divider: rgba(34, 34, 34, 0.2);
+    --shadow-color: 2px 4px 25px rgba(0, 0, 0, 0.07);
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--primary);
+    background-color: var(--white);
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: calc(22/16*100%);
+    color: var(--primary);
+    overflow-x: hidden;
+}
+
+* {
+    outline: none;
+}
+
+._main-btn{
+    @apply flex justify-center items-center p-2 w-full bg-accent rounded-full text-white border-[1px] border-accent hover:text-accent hover:bg-white;
+    transition: all .3s;
+}
+
+._title{
+    @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl/[calc(56/48*100%)];
+}
+
+._img{
+    @apply absolute top-0 right-0 left-0 bottom-0 w-full h-full object-cover;
+}
+
+.marker {
+    font-size: 0;
+    line-height: 0;
+    background-color: var(--accent);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#popup-call {
+    transition: opacity 0.3s;
+}
+
+#popup-call form {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.burger {
+    gap: 5px;
+}
+
+.burger .bar {
+    min-width: 30px;
+    height: 3px;
+    transition: all .3s;
+    border-radius: 2px;
+}
+
+.burger.active {
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
+.burger.active .bar:first-child {
+    transform: translate(6px, 5px);
+    rotate: 45deg;
+}
+
+.burger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .bar:last-child {
+    rotate: -45deg;
+    transform: translate(6px, -5px);
+}
+
+#popup-menu {
+    @apply pt-[100px] xs:pt-[150px] fixed w-screen h-screen text-2xl uppercase font-bold scale-0 pb-10;
+    transition: all .3s;
+}
+
+#popup-menu .menu {
+    @apply grid gap-5 md:gap-10;
+}
+
+#popup-menu.active {
+    @apply scale-100;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#popup-menu a {
+    @apply w-full block font-involve-500 text-2xl sm:text-4xl;
+}
+
+#popup-menu .sub-menu {
+    @apply pl-5 mt-2.5 text-xl grid gap-2.5;
+}
+
+#popup-call {
+display: none;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+#popup-call.active {
+display: flex;
+opacity: 1;
+}
+
+/* scroll */
+
+html {
+  scroll-behavior: smooth; /* Нативный плавный скролл для современных браузеров */
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto; /* Отключаем анимацию для пользователей с настройкой reduced motion */
+    }
+}
+
+/* accordion */
+
+.accordion-header {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.accordion-header p {
+    margin: 0;
+}
+
+.accordion-body {
+    transform: rotateX(90deg);
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    transition: all .3s;
+}
+
+.accordion-item.active .accordion-body {
+    transform: rotateX(0deg);
+    opacity: 1;
+    padding-top: 16px;
+    height: auto;
+}
+
+
+/* -------- */
+
+
+/* rating */
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating__inner {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.rating__body {
+    position: relative;
+}
+
+.rating__body::before {
+    content: '★★★★★';
+    display: block;
+    font-size: 28px;
+}
+
+.rating__active {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active::before {
+    content: '★★★★★';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #FECB01;
+    font-size: 28px;
+}
+
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.rating__item {
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__value {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(15/10*100%);
+}
+
+/* --------- */
+
+@layer utilities {
+    .bg-image-top {
+        background-image: url('../image/top/image.png');
+        background-position: center center;
+    }
+}
+
+
+@media (min-width: 920px) {
+    .md\:block {
+        display: block;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:hidden {
+        display: none;
+    }
+
+    .md\:max-w-none {
+        max-width: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .md\:block {
+        display: block;
+    }
+
+    .md\:flex {
+        display: flex;
+    }
+
+    .md\:hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    a[href="/"] span:nth-child(2) {
+        display: block;
+        margin-top: -0.3em; /* Корректировка межстрочного интервала */
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
