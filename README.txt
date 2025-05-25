@@ -1,118 +1,94 @@
-Inter Variable Font
-===================
+Beautiful Smile — Сайт стоматологической клиники
+Проект с акцентом на современный дизайн и интерактивность
 
-This download contains Inter as both variable fonts and static fonts.
+🛠 Технологии и инструменты
+Frontend:
 
-Inter is a variable font with these axes:
-  opsz
-  wght
+HTML5 (семантическая разметка, доступность)
 
-This means all the styles are contained in these files:
-  Inter-VariableFont_opsz,wght.ttf
-  Inter-Italic-VariableFont_opsz,wght.ttf
+CSS3 + Tailwind CSS (стилизация с использованием утилитарных классов)
 
-If your app fully supports variable fonts, you can now pick intermediate styles
-that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Inter:
-  static/Inter_18pt-Thin.ttf
-  static/Inter_18pt-ExtraLight.ttf
-  static/Inter_18pt-Light.ttf
-  static/Inter_18pt-Regular.ttf
-  static/Inter_18pt-Medium.ttf
-  static/Inter_18pt-SemiBold.ttf
-  static/Inter_18pt-Bold.ttf
-  static/Inter_18pt-ExtraBold.ttf
-  static/Inter_18pt-Black.ttf
-  static/Inter_24pt-Thin.ttf
-  static/Inter_24pt-ExtraLight.ttf
-  static/Inter_24pt-Light.ttf
-  static/Inter_24pt-Regular.ttf
-  static/Inter_24pt-Medium.ttf
-  static/Inter_24pt-SemiBold.ttf
-  static/Inter_24pt-Bold.ttf
-  static/Inter_24pt-ExtraBold.ttf
-  static/Inter_24pt-Black.ttf
-  static/Inter_28pt-Thin.ttf
-  static/Inter_28pt-ExtraLight.ttf
-  static/Inter_28pt-Light.ttf
-  static/Inter_28pt-Regular.ttf
-  static/Inter_28pt-Medium.ttf
-  static/Inter_28pt-SemiBold.ttf
-  static/Inter_28pt-Bold.ttf
-  static/Inter_28pt-ExtraBold.ttf
-  static/Inter_28pt-Black.ttf
-  static/Inter_18pt-ThinItalic.ttf
-  static/Inter_18pt-ExtraLightItalic.ttf
-  static/Inter_18pt-LightItalic.ttf
-  static/Inter_18pt-Italic.ttf
-  static/Inter_18pt-MediumItalic.ttf
-  static/Inter_18pt-SemiBoldItalic.ttf
-  static/Inter_18pt-BoldItalic.ttf
-  static/Inter_18pt-ExtraBoldItalic.ttf
-  static/Inter_18pt-BlackItalic.ttf
-  static/Inter_24pt-ThinItalic.ttf
-  static/Inter_24pt-ExtraLightItalic.ttf
-  static/Inter_24pt-LightItalic.ttf
-  static/Inter_24pt-Italic.ttf
-  static/Inter_24pt-MediumItalic.ttf
-  static/Inter_24pt-SemiBoldItalic.ttf
-  static/Inter_24pt-BoldItalic.ttf
-  static/Inter_24pt-ExtraBoldItalic.ttf
-  static/Inter_24pt-BlackItalic.ttf
-  static/Inter_28pt-ThinItalic.ttf
-  static/Inter_28pt-ExtraLightItalic.ttf
-  static/Inter_28pt-LightItalic.ttf
-  static/Inter_28pt-Italic.ttf
-  static/Inter_28pt-MediumItalic.ttf
-  static/Inter_28pt-SemiBoldItalic.ttf
-  static/Inter_28pt-BoldItalic.ttf
-  static/Inter_28pt-ExtraBoldItalic.ttf
-  static/Inter_28pt-BlackItalic.ttf
+JavaScript (интерактивные элементы, формы)
 
-Get started
------------
+Адаптивная вёрстка (мобильные устройства, планшеты, десктоп)
 
-1. Install the font files you want to use
+Сборка и оптимизация:
 
-2. Use your app's font picker to view the font family and all the
-available styles
+PostCSS (автопрефиксы, оптимизация стилей)
 
-Learn more about variable fonts
--------------------------------
+Дополнительно:
 
-  https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts
-  https://variablefonts.typenetwork.com
-  https://medium.com/variable-fonts
+CSS-анимации (плавные переходы, hover-эффекты)
 
-In desktop apps
+Микроразметка данных (для SEO)
 
-  https://theblog.adobe.com/can-variable-fonts-illustrator-cc
-  https://helpx.adobe.com/nz/photoshop/using/fonts.html#variable_fonts
+Валидация форм (кастомные сообщения об ошибках)
 
-Online
+🌟 Особенности реализации
+Производительность:
 
-  https://developers.google.com/fonts/docs/getting_started
-  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
-  https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts
+Минимизированные CSS/JS-файлы
 
-Installing fonts
+Асинхронная загрузка скриптов
 
-  MacOS: https://support.apple.com/en-us/HT201749
-  Linux: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
-  Windows: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
+Интерактивность:
 
-Android Apps
+Модальные окна с формами обратной связи
 
-  https://developers.google.com/fonts/docs/android
-  https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
+Плавный скролл к якорным ссылкам
 
-License
--------
-Please read the full license text (OFL.txt) to understand the permissions,
-restrictions and requirements for usage, redistribution, and modification.
+Адаптивное меню-бургер для мобильных устройств
 
-You can use them in your products & projects – print or digital,
-commercial or otherwise.
+Доступность:
 
-This isn't legal advice, please consider consulting a lawyer and see the full
-license for all details.
+ARIA-атрибуты для навигации
+
+Контрастные цвета текста/фона
+
+Поддержка клавиатурного управления
+
+Структура проекта:
+
+Модульные SCSS-файлы
+
+Конфигурируемые настройки Tailwind
+
+🚀 Как запустить проект
+Клонируйте репозиторий:
+
+bash
+git clone https://github.com/V1nStery/Beautiful-smile.git
+Установите зависимости:
+
+bash
+npm install
+Запустите сборку:
+
+bash
+gulp
+Откройте в браузере:
+
+bash
+http://localhost:3000
+📂 Структура репозитория
+├── src/  
+│   ├── scss/          # Стили (SCSS модули)  
+│   ├── js/            # Скрипты (слайдеры, формы, анимации)  
+│   ├── images/        # Оптимизированные изображения  
+│   └── html/          # HTML-шаблоны  
+├── dist/              # Собранный проект (автогенерация)  
+├── gulpfile.js        # Конфигурация задач Gulp  
+└── tailwind.config.js # Настройки Tailwind CSS  
+📌 Планы по развитию
+Добавить многоязычную поддержку
+
+Интеграция с CMS (например, Strapi)
+
+Тестирование Lighthouse (оптимизация до 90+ баллов)
+
+Реализация онлайн-записи через API
+
+Демо: https://v1nstery.github.io/Beautiful-smile
+Лицензия: MIT
+
+Проект демонстрирует современные подходы к веб-разработке, акцент на производительность и UX. 🚀
